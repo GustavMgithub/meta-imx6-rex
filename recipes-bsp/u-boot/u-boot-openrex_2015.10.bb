@@ -11,7 +11,7 @@ at http://www.imx6rex.com/open-rex"
 
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://Licenses/README;md5=0507cd7da8e7ad6d6701926ec9b84c95"
-COMPATIBLE_MACHINE = "(mxs|mx5|mx6|mx6ul|mx7|vf|imx6q-openrex)"
+COMPATIBLE_MACHINE = "(mxs|mx5|mx6|mx6ul|mx7|vf|imx6q-openrex|imx6s-openrex)"
 
 DEPENDS_mxs += "elftosb-native openssl-native"
 
@@ -24,7 +24,7 @@ SRCBRANCH ??= "jethro"
 SRC_URI = "git://github.com/GustavMgithub/imx6-rex-u-boot.git;protocol=git;branch=${SRCBRANCH}"
 
 #SRCREV is the commit number, must be always changed for a new version
-SRCREV = "1000061e86289b59573a4fbddbccfb9a082267ef"
+SRCREV = "148e33c75002bc8ae9f7f370481fed0bda36d05c"
 
 S = "${WORKDIR}/git"
 

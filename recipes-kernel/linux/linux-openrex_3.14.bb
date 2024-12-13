@@ -20,7 +20,7 @@ SRCBRANCH = "jethro"
 LOCALVERSION = "-yocto"
 
 # Update to latest linux commit!
-SRCREV = "42cefe45b7f9ef6196369770fc315cc74b465770"
+SRCREV = "62c980670f746630de6c9902a87a9891af2d5d3d"
 
 KERNEL_SRC ?= "git://github.com/GustavMgithub/imx6-rex-linux.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} file://defconfig"
@@ -28,4 +28,4 @@ SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} file://defconfig"
 #PV .= "+git${SRCPV}"
 PV .= ""
 
-COMPATIBLE_MACHINE = "(mx6|mx7|imx6q-openrex)"
+COMPATIBLE_MACHINE = "(mx6|mx7|imx6q-openrex|imx6s-openrex)"
